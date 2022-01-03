@@ -152,10 +152,12 @@ $(document).ready(function() {
         createOverlay();
         fadeOutOverlay();
         setTimeout(removeOverlay, fadeTime);
-        fadeInInitial();
-        fadingIn();
         //scaleUpInitial();
         //scalingUp();
+        slideDownInitial();
+        slidingDown();
+        //fadeInInitial();
+        //fadingIn();
     }
 
     startUpActions();
@@ -212,9 +214,30 @@ $(document).ready(function() {
 
     // End of Scaling Options
 
+    // Sliding Options
+    function slideDownInitial() {
+        $("#nameBox, #subTitle, #bgMusicController").slideUp(0);
+    }
+
+    function slidingDown() {
+        $("#nameBox").delay(fadeTime).slideDown(transitionTime);
+        $("#subTitle").delay(fadeTime*1.5).slideDown(transitionTime);
+        $("#bgMusicController").delay(fadeTime*2).slideDown(transitionTime);
+    }
+
+    function slidingUp() {
+        $("#bgMusicController").slideUp(transitionTime);
+        $("#subTitle").delay(transitionTime*0.5).slideUp(transitionTime);
+        $("#nameBox").delay(transitionTime).slideUp(transitionTime);
+    }
+
+    // End of Sliding Options
+
     $("#nameBox").click(function() {
         //fadingOut();
-        scalingDown();
+        //scalingDown();
+        slidingUp();
+
         createOverlay();
         hideOverlay();
         fadeInOverlay();
