@@ -144,10 +144,24 @@ $(document).ready(function() {
         createOverlay();
         fadeOutOverlay();
         setTimeout(removeOverlay, fadeTime);
+        fadeInInitial();
+        fadingIn();
     }
 
     startUpActions();
 
+    // Fading options
+    function fadeInInitial() {
+        $("#nameBox, #subTitle, #bgMusicController").fadeTo(0, 0);
+    }
+
+    function fadingIn() {
+        $("#nameBox").delay(fadeTime*2).fadeTo(transitionTime*3, 1);
+        $("#subTitle").delay(fadeTime*2.5).fadeTo(transitionTime*3, 1);
+        $("#bgMusicController").delay(fadeTime*3).fadeTo(transitionTime*3, 1);
+    }
+
+    // End of Fading options
 
 });
 </script>
