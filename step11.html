@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="landing_page/favicon.png">
+<title>Julie Broch</title>
+<style>
+@font-face {
+    font-family: nameFont;
+    src: url("landing_page/Amalfi Coast.ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: nameFont;
+    overflow: hidden;
+    background-image: url("landing_page/bgPic.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+audio {
+    width: 0;
+    height: 0;
+}
+#nameBox {
+    font-size: 4.5em;
+    letter-spacing: 10px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: rgba(255,255,255,0.3);
+    padding: 20px;
+}
+#nameBox:hover {
+    font-size: 4.7em;
+    text-decoration: underline;
+}
+#subTitle {
+    font-size: 3em;
+    letter-spacing: 12px;
+    color: #B599CD;
+    background-color: rgba(255,255,255,0.3);
+    padding: 20px;
+    text-align: center;
+}
+#bgMusicController {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    margin: auto;
+}
+#bgMusicController img {
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+}
+#bgMusicController img:hover {
+    height: 53px;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+#nameBox {
+    font-size: 3em;
+}
+#nameBox:hover {
+    font-size: 3.1em;
+}
+#subTitle {
+    font-size: 3em;
+}
+}
+
+@media (max-width: 480px) {
+#nameBox {
+    font-size: 2em;
+}
+#nameBox:hover {
+    font-size: 2.1em;
+}
+#subTitle {
+    font-size: 0.9em;
+}
+}
+</style> 
+	</head>
+	
+
+
+<body>
+<audio preload="auto">
+  <source src="landing_page/bgAudio.mp3" type="audio/mp3">
+</audio>
+<section>
+  <div id="nameBox">Julie Broch</div>
+  <div id="subTitle">Hello</div>
+  <div id="bgMusicController"><img src="landing_page/btnPausePlay.svg" alt="Audio Pause Play Button"/></div>
+</section>
+</body>
+</html>
