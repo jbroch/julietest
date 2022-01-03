@@ -135,9 +135,15 @@ $(document).ready(function() {
         $("#colorOverlay").fadeTo(fadeTime, 0);
     }
 
+
+    removeOverlay = function() {
+        $("#colorOverlay").remove();
+    }
+
     function startUpActions() {
         createOverlay();
         fadeOutOverlay();
+        setTimeout(removeOverlay, fadeTime);
     }
 
     startUpActions();
