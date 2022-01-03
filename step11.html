@@ -154,6 +154,8 @@ $(document).ready(function() {
         setTimeout(removeOverlay, fadeTime);
         fadeInInitial();
         fadingIn();
+        //scaleUpInitial();
+        //scalingUp();
     }
 
     startUpActions();
@@ -177,8 +179,42 @@ $(document).ready(function() {
 
     // End of Fading options
 
+    // Scaling Options
+    function scaleUpInitial() {
+        $("#nameBox, #subTitle, #bgMusicController").transition({
+            "scale": "0"
+        }, 0);
+    }
+
+    function scalingUp() {
+        $("#nameBox").delay(fadeTime).transition({
+            "scale": "1"
+        }, transitionTime);
+        $("#subTitle").delay(fadeTime*1.5).transition({
+            "scale": "1"
+        }, transitionTime);
+        $("#bgMusicController").delay(fadeTime*2).transition({
+            "scale": "1"
+        }, transitionTime);
+    }
+
+    function scalingDown() {
+        $("#bgMusicController").transition({
+            "scale": "0"
+        }, transitionTime);
+        $("#subTitle").delay(transitionTime*0.5).transition({
+            "scale": "0"
+        }, transitionTime);
+        $("#nameBox").delay(transitionTime).transition({
+            "scale": "0"
+        }, transitionTime);
+    }
+
+    // End of Scaling Options
+
     $("#nameBox").click(function() {
-        fadingOut();
+        //fadingOut();
+        scalingDown();
         createOverlay();
         hideOverlay();
         fadeInOverlay();
