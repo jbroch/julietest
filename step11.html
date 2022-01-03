@@ -95,7 +95,30 @@ audio {
 }
 }
 </style> 
-	</head>
+<script type="text/javascript" src="https://freestyleacademy.rocks/jquery/minified.js"></script>
+<script type="text/javascript" src="https://freestyleacademy.rocks/jquery/transit.js"></script>
+<script>
+$(document).ready(function() {
+	"use strict";
+    var fadeTime, removeOverlay, transitionTime;
+    fadeTime = 2000;
+    transitionTime = 2000;
+    $("#bgMusicController").toggle(
+    function() {
+        // 1st click
+        $("audio")[0].play();
+    }, function() {
+        // 2nd click
+        $("audio")[0].pause();
+    }
+
+
+
+
+
+});
+</script>
+</head>
 	
 
 
