@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><snippet name="Switch" description="" preview="code" type="block"><insertText location="beforeSelection"><![CDATA[switch () {
+        case "1":
+              
+              break;
+        case "2":
+              
+              break;
+        case "3":
+              
+              break;
+        case "4":
+              
+              break; 
+} ]]></insertText><insertText location="afterSelection"><![CDATA[]]></insertText></snippet>

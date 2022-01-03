@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><snippet name="Toggle 3" description="" preview="code" type="block"><insertText location="beforeSelection"><![CDATA[$("").toggle(
+function() {
+        //actions for 1st click
+
+}, function() {
+        //actions for 2nd click
+
+}, function() {
+        //actions for 3rd click
+
+});]]></insertText><insertText location="afterSelection"><![CDATA[]]></insertText></snippet>

@@ -1,0 +1,1 @@
+﻿<?xml version="1.0" encoding="utf-8"?><snippet name="FadeIn" description="" preview="code" type="block"><insertText location="beforeSelection"><![CDATA[$("").fadeIn(duration,callback);]]></insertText><insertText location="afterSelection"><![CDATA[]]></insertText></snippet>

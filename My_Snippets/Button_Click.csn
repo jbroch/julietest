@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?><snippet name="Button Click" description="" preview="code" type="block"><insertText location="beforeSelection"><![CDATA[$(".btn").click(function(){//actions for when you click on a button
+	btnClicked = $(this).attr("ID");
+	
+});]]></insertText><insertText location="afterSelection"><![CDATA[]]></insertText></snippet>

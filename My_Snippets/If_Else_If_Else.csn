@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?><snippet name="If Else If Else" description="" preview="code" type="block"><insertText location="beforeSelection"><![CDATA[if () {//Possible operators === !== > >== < <==
+
+} else if () {
+
+} else {
+
+};]]></insertText><insertText location="afterSelection"><![CDATA[]]></insertText></snippet>

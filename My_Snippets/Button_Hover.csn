@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?><snippet name="Button Hover" description="" preview="code" type="block"><insertText location="beforeSelection"><![CDATA[$(".btn").hover(function(){//actions for when you hover ON a button
+
+}, function(){//actions for when you hover OFF a button
+
+});]]></insertText><insertText location="afterSelection"><![CDATA[]]></insertText></snippet>

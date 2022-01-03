@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<snippet name="1 Script Minified" description="" preview="code" type="block">
+<insertText location="beforeSelection">
+<![CDATA[<script src="https://freestyleacademy.rocks/jquery/minified.js"></script>]]>
+</insertText>
+<insertText location="afterSelection"><![CDATA[]]>
+</insertText>
+</snippet>

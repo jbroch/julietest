@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<snippet name="3 Script Easing Compatibility" description="" preview="code" type="block">
+<insertText location="beforeSelection">
+<![CDATA[<script src="https://freestyleacademy.rocks/jquery/easing.compatibility.js"></script>]]>
+</insertText>
+<insertText location="afterSelection"><![CDATA[]]>
+</insertText>
+</snippet>

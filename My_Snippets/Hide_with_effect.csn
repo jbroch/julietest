@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?><snippet name="Hide with effect" description="Effects
+
+blind
+bounce
+clip
+drop
+explode
+fold
+highlight
+puff
+pulsate
+scale
+shake
+size
+slide
+Options - works for SOME of the above effects
+
+direction:
+"horizontal"
+"vertical"
+"right"or "left"
+"down" or "up"
+percent:#
+pieces:#" preview="code" type="block"><insertText location="beforeSelection"><![CDATA[$("").hide("effect", {options:"attribute"} , duration) ]]></insertText><insertText location="afterSelection"><![CDATA[]]></insertText></snippet>
