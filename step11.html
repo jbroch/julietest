@@ -131,8 +131,16 @@ $(document).ready(function() {
 	    });
     }
 
+    function hideOverlay() {
+        $("#colorOverlay").fadeTo(0, 0);
+    }
+
     function fadeOutOverlay() {
         $("#colorOverlay").fadeTo(fadeTime, 0);
+    }
+
+    function fadeInOverlay() {
+        $("#colorOverlay").delay(transitionTime*2).fadeTo(fadeTime, 1);
     }
 
 
@@ -171,7 +179,16 @@ $(document).ready(function() {
 
     $("#nameBox").click(function() {
         fadingOut();
+        createOverlay();
+        hideOverlay();
+        fadeInOverlay();
+        setTimeout(jumpToAboutMe, transitionTime*3);
     });
+
+    function jumpToAboutMe() {
+        window.location.href = "https://freestyleacademy.rocks/~JulieB/about-me";
+    }
+
 });
 </script>
 </head>
