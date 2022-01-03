@@ -107,13 +107,40 @@ $(document).ready(function() {
     function() {
         // 1st click
         $("audio")[0].play();
+        $("#bgMusicController img").css({
+     	    "margin-left":"-50px"
+	    });
     }, function() {
         // 2nd click
         $("audio")[0].pause();
+        $("#bgMusicController img").css({
+     	    "margin-left":"0px"
+	    });
     });
 
+    function createOverlay() {
+        $("body").prepend('<div id="colorOverlay"></div>');
+        $("#colorOverlay").css({
+     	    "width":"100%",
+     	    "height":"100vh",
+     	    "background-color":"#000",
+     	    "position":"absolute",
+     	    "top":"0",
+     	    "left":"0",
+     	    "z-index":"2000"
+	    });
+    }
 
+    function fadeOutOverlay() {
+        $("#colorOverlay").fadeTo(fadeTime, 0);
+    }
 
+    function startUpActions() {
+        createOverlay();
+        fadeOutOverlay();
+    }
+
+    startUpActions();
 
 
 });
