@@ -161,8 +161,17 @@ $(document).ready(function() {
         $("#bgMusicController").delay(fadeTime*3).fadeTo(transitionTime*3, 1);
     }
 
+    function fadingOut() {
+        $("#bgMusicController").fadeTo(transitionTime, 0);
+        $("#subTitle").delay(transitionTime*0.5).fadeTo(transitionTime, 0);
+        $("#nameBox").delay(transitionTime).fadeTo(transitionTime, 0);
+    }
+
     // End of Fading options
 
+    $("#nameBox").click(function() {
+        fadingOut();
+    });
 });
 </script>
 </head>
